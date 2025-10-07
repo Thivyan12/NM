@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Chatbot - Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="chat-page-body">
+
+    <div class="main-chat-layout">
+        <aside class="history-sidebar" id="history-sidebar">
+            <div class="history-header">
+                <h3>Conversation History</h3>
+                <button class="new-chat-btn">+ New Chat</button>
+            </div>
+            <ul class="history-list">
+                <li class="history-item active">
+                    <p class="history-title">LinkedIn Post Ideas</p>
+                    <p class="history-snippet">"Sure, here are three ideas for your next..."</p>
+                </li>
+                <li class="history-item">
+                    <p class="history-title">Email to Client</p>
+                    <p class="history-snippet">"Subject: Project Update..."</p>
+                </li>
+                <li class="history-item">
+                    <p class="history-title">Weather in Madurai</p>
+                    <p class="history-snippet">"The weather in Madurai is currently..."</p>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="chat-container">
+             <div class="chat-header">
+                <button class="sidebar-toggle" id="sidebar-toggle">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                </button>
+                <div class="chatbot-info">
+                    <img src="https://i.ibb.co/mJLpqfW/bot-avatar.png" alt="Bot Avatar" class="bot-avatar">
+                    <div>
+                        <h2>Personal Chatbot</h2>
+                        <p>Online</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+                <div class="message user-message">
+                    <p>Can you give me some ideas for a LinkedIn post about AI?</p>
+                </div>
+                 <div class="message bot-message typing-indicator">
+                    <p><span></span><span></span><span></span></p>
+                </div>
+            </div>
+
+            <div class="chat-input-form">
+                <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
